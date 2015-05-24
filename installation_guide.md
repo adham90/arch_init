@@ -1,13 +1,13 @@
 #Arch Linux installation guide
 
 1. See what disk structure there is:
-`$ fdisk -l`
+`$ lsblk`
 2. Format boot partition:
 `$ mkfs.ext4 /dev/sda<root>`
 3. Mount:
 ``` 
 $ mount /dev/sda<root> /mnt
-$ mkdir /mnt/home 
+$ mkdir /mnt/home
 $ mount /dev/sda<home> /mnt/home
 ```
 4. Change mirror for **pacman**:
@@ -75,7 +75,7 @@ $ nano ~/.xinitrc
 `$ pacman -S awsome vicious xorg-twm xorg-xclock xterm`
 26. Intel graphics
 ```
-$ pacman -S xf86-video-intel libva-intel-driver
+$ pacman -S xf86-video-intel libva-intel-driver nvidia nvidia-utils
 ```
 27. Config **awsome**:
 ```
