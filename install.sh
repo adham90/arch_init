@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo su -c whoami
 #pacman -Syu
 #pacman -S --noconfirm xorg-server xorg-server-utils xorg-xinit mesa
 #xinit
@@ -9,5 +10,5 @@
 #pacman -S --noconfirm ruby
 
 git clone https://github.com/adham90/dotfile.git dotfile
-ruby dotfile/setup.rb
+sudo ruby dotfile/setup.rb
 
