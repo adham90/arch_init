@@ -1,14 +1,16 @@
 #!/bin/bash
 
-sudo su -c whoami
-#pacman -Syu
-#pacman -S --noconfirm xorg-server xorg-server-utils xorg-xinit mesa
-#xinit
-#pacman -S --noconfirm vicious xorg-twm xorg-xclock xterm
-#pacman -S --noconfirm xf86-video-intel libva-intel-driver
-#pacman -S --noconfirm xf86-input-synaptics
-#pacman -S --noconfirm ruby
+HOME=$(eval echo ~${SUDO_USER})
 
-git clone https://github.com/adham90/dotfile.git dotfile
-sudo ruby dotfile/setup.rb
+sudo su -c whoami
+sudo pacman -Syu
+sudo pacman -S --noconfirm xorg-server xorg-server-utils xorg-xinit mesa
+xinit
+sudo pacman -S --noconfirm vicious xorg-twm xorg-xclock xterm
+sudo pacman -S --noconfirm xf86-video-intel libva-intel-driver
+sudo pacman -S --noconfirm xf86-input-synaptics
+sudo pacman -S --noconfirm ruby
+
+git clone https://github.com/adham90/dotfile.git $HOME/dotfile
+sudo $HOME/dotfile/setup.sh
 
