@@ -83,6 +83,14 @@ $ echo "exec awesome" >> ~/.xinitrc
 $ mkdir -p ~/.config/awesome/
 $ cp /etc/xdg/awesome/rc.lua ~/.config/awesome/ # basic config
 ```
+or config **i3**
+`$ pacman -S i3 dmenu`
+copy i3 folder in to your .config file
+copy i3status.conf in to your home dir and rename it to `.i3status.conf`
+use font awesome to get the status bar icons 
+font-awesome cheatsheet
+https://fortawesome.github.io/Font-Awesome/cheatsheet/
+
 28. Install Laptop touchpad:
 `$ pacman -S xf86-input-synaptics`
 
