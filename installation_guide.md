@@ -1,4 +1,4 @@
-#Arch Linux installation guide
+# Arch Linux installation guide
 
 1. See what disk structure there is:
 `$ lsblk`
